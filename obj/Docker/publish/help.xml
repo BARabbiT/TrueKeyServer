@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TrueKeyServer</name>
+    </assembly>
+    <members>
+        <member name="M:TrueKeyServer.Controllers.ELMAComtrollersV1.TaskCommentControllers.AddTask(TrueKeyServer.Models.Mobile.Outer.ELMATask.Request)">
+             <summary>
+             Запрос для создания или изменения задачи.
+             </summary>
+            
+             <remarks>
+             Создает новую задачу из полученных данных, если таковая задача уже имеется, то вносит в нее изменения.
+             - taskId - идентификатор заявки (только для редактирования)
+             - number - номер заявки
+             - orgUUID - UUID организации из наумен на которую открыта заявка
+             - dateCreate - дата и время создания заявки
+             - title - заголовок задачи (категория заявки)
+             - description - описание заявки
+             - imageSource - массив ссылок на прикрепленные файлы к заявке
+             - status - статус заявки, один из массив:
+             - - New - новая заявка
+             - - InProgress - в работе
+             - - WaitForResponse - ожидает ответа
+             - - Resolved - выполнена
+             - - Closed - закрыта
+             - author - UUID автора заявки
+             - subscribers - строка с UUID всех подписчиков на заявку, разделенных символом ';'
+             </remarks>
+            
+             <response code="200">
+             Возвращает SUCESS, при успешном создании.
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.ELMAComtrollersV1.TaskCommentControllers.AddComment(TrueKeyServer.Models.Mobile.Outer.ELMAComment.Request)">
+             <summary>
+             Запрос для добавления комментария.
+             </summary>
+            
+             <remarks>
+             Создает новый комментарий и пркрепляет его к заявке.
+             - taskId - идентификатор заявки
+             - commentId - идентификатор комментария
+             - dateCreate - дата и время создания комментария
+             - author - UUID автора заявки
+             - name - имя автора заявки
+             - message - текст комментария
+             </remarks>
+            
+             <response code="200">
+             Возвращает SUCESS, при успешном создании.
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.ELMAComtrollersV1.TaskCommentControllers.AddFiles(TrueKeyServer.Models.Mobile.Outer.ELMAFilesAdd.Request)">
+             <summary>
+             Запрос для добавления файлов к заявке\комментарию.
+             </summary>
+            
+             <remarks>
+             Добавляет массив ссылок на файлы в комментаий\заявку.
+             - uuid - идентификатор сущности к которой прикреплять файлы
+             - imageSource - массив ссылок на файлы для прикрепления
+             </remarks>
+            
+             <response code="200">
+             Возвращает SUCESS, при успешном выполнении.
+             </response>
+        </member>
+        <member name="T:TrueKeyServer.Controllers.HelperControllersV1.HelperControllers">
+            <summary>
+            Контроллер для хелпера.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.HelperControllersV1.HelperControllers.GetUUIDByOrgId(TrueKeyServer.Models.Helper.InfoOrg.Request)">
+            <summary>
+            Запрос для получения идентификатора организации.
+            </summary>
+            
+            <remarks>
+            Возвращает идентифи катор организации в наумане (UUID) по идентификатору организации из 1С.
+            - orgId - идентификатор организации из 1С
+            </remarks>
+            
+            <response code="200">
+            Возвращает идентификатор орагнизации, если таковая есть в наумане.
+            - uuid - UUID организации из наумана
+            - errorMessage - строка с ошибкой, если таковая возникнет
+            </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.RegisterMobile(TrueKeyServer.Models.Mobile.Outer.InfoRegister.Request)">
+             <summary>
+             Запрос для регистрации пользоватетей.
+             </summary>
+            
+             <remarks>
+             Регистрирует пользователя МП. Фактически, связывает пользователя МП с пользователем в наумане.
+             Если в наумане его нет, то создает его.
+             - Login - логин для дальнейшей авторизации в МП
+             - Password - пароль для дальнейшей авторизации в МП
+             - Name - имя пользователя
+             - OrgIds - идентификатор организации пользователя из 1C или же UUID организации из науман.Если указывается именно UUID, то следующее поле должно быть true
+             - NoQrReg - булево поле обозначающее регистрацию без QR и то, что в OrgIds передается UUID из наумана
+             - MobileId - идентификатор установки(идентифкатор МП) используется для пушей
+             </remarks>
+            
+             <response code="200">
+             Возвращает объект пользователя при успешной регистрации.
+             - userUUID - UUID пользователя в наумен
+             - name - имя пользователя в наумен
+             - phone - телефонный номер пользователя в наумен
+             - authKey - авторизационный ключ, для использования при создании\редактировании задач.
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.AuthMobile(TrueKeyServer.Models.Mobile.Outer.InfoAuth.Request)">
+             <summary>
+             Запрос авторизации пользователя.
+             </summary>
+            
+             <remarks>
+             Авторизует пользователя, если авторизация идет на новом устройстве, то добавляет это устройство в список получающих пуши, так же обновляет авторизационный ключ.
+             - Login - логин авторизации в МП
+             - Password - пароль авторизации в МП
+             - MobileId - идентификатор установки(идентифкатор МП) используется для пушей
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает UUID пользователя и авторизационный ключ:
+             - userUUID - UUID пользователя в наумен
+             - name - имя пользователя в наумен
+             - phone - телефонный номер пользователя в наумен
+             - authKey - авторизационный ключ, для использования при создании\редактировании задач.
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.LogOutMobile(TrueKeyServer.Models.Mobile.Outer.InfoLogOut.Request)">
+             <summary>
+             Запрос дял разлогина пользователя.
+             </summary>
+            
+             <remarks>
+             Используется при разлогине пользователя. Фактически отвязываем мобильный идентификатор устройства, что бы на него не шли больше пуши.
+             - MobileId - mobileid пользователя
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает идентификатор успешности запроса:
+             - success - идентификатор успешности запроса
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.GetOrgMobile(TrueKeyServer.Models.Mobile.Outer.InfoOrg.Request)">
+             <summary>
+             Запрос для получения списка организаций по пользователю.
+             </summary>
+            
+             <remarks>
+             Используется для полученяи массива организация к которым привязан пользователь.
+             - UserUUID - UUID пользователя в наумен
+             </remarks>
+            
+             /// <response code="200">
+             Сервер в ответ массив организаций для данного пользователя:
+             - organisations - массив организаций, содержит:
+             - uuid - UUID организации из наумен
+             - name - наименование организации в наумен
+             - partner - метка партнера, обозначает, что эта организация партнер и ее надо отображать в профиле, но на нее нельзя заводить заявки
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.ChangeUserData(TrueKeyServer.Models.Mobile.Outer.ChangeMobileUser.Request)">
+             <summary>
+             Запрос для редактирования данных пользователя.
+             </summary>
+            
+             <remarks>
+             Используется для редактирования данных пользователя.
+             - userUUID - UUID пользователя в наумен
+             - name - имя пользователя в наумен
+             - phone - телефонный номер пользователя в наумен
+             - login - новый логин для пользователя
+             - password - новый пароль для пользователя
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает метку успешности изменения данных:
+             - success - успешность изменения данных
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.GetUserData(TrueKeyServer.Models.Mobile.Outer.GetMobileUser.Request)">
+             <summary>
+             Запрос для запроса данных пользователя.
+             </summary>
+            
+             <remarks>
+             Возвращает данные пользователя.
+             - MobilePhone - номер телефона пользователя
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает данны пользователя:
+             - userUUID - UUID пользователя в наумен
+             - name - имя пользователя в наумен
+             - phone - телефонный номер пользователя в наумен
+             - login - логин для входа в МП.
+             - authKey - авторизационный ключ, для использования при создании\редактировании задач.
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.GetContacts(TrueKeyServer.Models.Mobile.Outer.GetContactsData.Request)">
+             <summary>
+             Запрос для получения данных по контактным лицам, ответственным за партнера).
+             </summary>
+            
+             <remarks>
+             Возвращает данные по контактным лицам по ораганизации к которой относиться данный пользователь:
+             - uuid - идентификатор пользователя в системе науман
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает массив контактных лиц:
+             - contacts - массив контактных лиц
+             - - name - имя пользователя в наумен
+             - - phone - телефонный номер пользователя в наумен
+             - - role - должность контактного лица
+             - - image - адрес фото
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="T:TrueKeyServer.Controllers.MobileControllersV2.MobileExchangeControllers">
+            <summary>
+            Контроллер для работы с получением задач\комментариев.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileExchangeControllers.GetExchangeTaskMobile(TrueKeyServer.Models.Mobile.Outer.InfoExchange.Request)">
+            <summary>
+            Запрос задач и коментариев для мобилки.
+            </summary>
+            
+            <remarks>
+            Возвращает новые данные в ответ на запрос от МП. Если присылается 0 в поле LastSync, то присылает все задачи не зависимо от даты изменений в них.
+            - orgUUID - массив идентификаторов организаций в наумен по которым будут возвращаться задачи
+            - lastSync - время последней успешной синхронизации(время в UNIX формате)
+            - mobileId - идентификатор мобильного приложения
+            </remarks>
+            
+            <response code="200">
+            Сервер возвращает массив задач и комментариев или ошибку, если таковая произойдет.
+            - taskId - идентификатор задачи
+            - number - номер задачи
+            - orgUUID - идетификатор орагнизации
+            - title - заголовок задачи(предположительно категория)
+            - description - описание задачи
+            - dateCreate - дата создания задачи
+            - imageSource - массив прикрепленных файлов(содержит url адреса для загрузки файлов)
+            - status - статус заявки, берется из массива:
+            - - NotSailed - не доставлена до наумана
+            - - New - доставлена до наумана
+            - - InProgress - в работе
+            - - WaitForResponse - ожидает ответа
+            - - Resolved - выполнена
+            - - Closed - закрыта
+            - comments - массив комментариев:
+             - - taskId - идентификатор заявки
+             - - userUUID - автор комментария
+             - - name - имя автора комментария
+             - - commentId - идентификатор комментария в наумане
+             - - dateCreate - дата\время создания комментария
+             - - message - текст комментария
+             - - imageSource - массив прикрепленных файлов(содержит url адреса для загрузки файлов)
+            </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileExchangeControllers.GetCommentsMobile(TrueKeyServer.Models.Mobile.Outer.InfoComment.Request)">
+            <summary>
+            Запрос комментариев по задаче.
+            </summary>
+            
+            <remarks>
+            Сервер вернет список комментариев по ид заявки, измененых или добавленых после времени последней синхронизации. Если присылается 0 в поле LastSync, то присылает все комментарии не зависимо от даты изменений в них.
+            - taskId - идентификатор заявки
+            - lastSync - время последней успешной синхронизации (время в UNIX формате)
+            - mobileId - идентификатор мобильного приложения
+            </remarks>
+            
+            <response code="200">
+            Сервер в ответ возвращает массив комментариев или описание ошибки:
+            - comments - массив комментариев:
+            - taskId - идентификатор заявки
+            - userUUID - автор комментария
+            - name - имя автора комментария
+            - commentId - идентификатор комментария в наумане
+            - dateCreate - дата\время создания комментария
+            - message - текст комментария
+            - imageSource - массив прикрепленных файлов(содержит url адреса для загрузки файлов)
+            - errorMessage - строка с ошибкой, если таковая возникнет
+            </response>
+        </member>
+        <member name="T:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers">
+            <summary>
+            Контроллер для создания и изменения задач и комментариев.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AddTaskMobile(TrueKeyServer.Models.Mobile.Outer.MobileTask.Request)">
+             <summary>
+             Запрос для создания или изменения заявки.
+             </summary>
+            
+             <remarks>
+             Создает новую заявку из полученных данных, если таковая заявка уже имеется, то вносит в нее изменения.
+             - taskId - идентификатор заявки (только для редактирования)
+             - orgUUID - UUID организации из наумен на которую открыта заявка
+             - title - заголовок заявки (категория заявки)
+             - description - описание заявки
+             - mobileId  - мобильный идентификатор с которого создаетя\меняется заявка
+             - authkey  - авторизационный ключ для наумана
+             - status - статус заявки, один из массива:
+             - - New - новая заявка
+             - - InProgress - в работе
+             - - WaitForResponse - ожидает ответа
+             - - Resolved - выполнена
+             - - Closed - закрыта
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает данные по заявке в наумане и описание ошибки, если она возникает.
+             - uuid - идентифкатор заявки в наумане
+             - number  - номер заявки
+             - dateCreate  - дата и время создания заявки
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AddCommentMobile(TrueKeyServer.Models.Mobile.Outer.MobileComment.Request)">
+             <summary>
+             Запрос для добавления комментария.
+             </summary>
+            
+             <remarks>
+             Создает новый комментарий и прикрепляет его к заявке.
+             - taskId - идентификатор заявки
+             - message - текст комментария
+             - mobileId - идентифкатор мобильного приложения
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает данные по заявке в наумане и описание ошибки, если она возникает.
+             - uuid - идентифкатор заявки в наумане
+             - number  - нмоер заявки
+             - dateCreate  - дата и время создания заявки
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles">
+             <summary>
+             Запрос для добавления файлов к заявке\комментарию.
+             </summary>
+            
+             <remarks>
+             <para>Добавляет файл к указанной сущности. Запрос должен содержать полезную нагрузку типа form-data.</para>
+             <para>
+                 {
+                 "uuid" - "string"
+                 "file1" - file
+                 "file2" - file
+                 ...
+                 "fileN" - file
+                 }
+             </para>
+             <para>
+             - uuid - идентификатор сущности к которой прикрепляются файлы (комментарий или заявка)
+             - file1..fileN - сами файлы
+             </para>
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает метку успешности изменения данных:
+             - success - успешность изменения данных
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.GetFilesLinks(TrueKeyServer.Models.Mobile.Outer.GetFileLink.Request)">
+             <summary>
+             Запрос для получения ссылки на файл из ЕЛМЫ.
+             </summary>
+            
+             <remarks>
+             Запрашивает ссылки по указанным айди файлов из ЕЛМЫ
+             - FileIds - массив идентификаторов файлов 
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает массив сопоставлений, типа ид файла - его ссылка.
+             - fileLinks - массив сопоставлений
+             - - id  - идентификатор файла
+             - - link - ссылка на загрузку
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.GetCategories">
+             <summary>
+             Запрос на получение списка категорий для заявок.
+             </summary>
+            
+             <remarks>
+             Запрос для получения актуального списка категорияй заявок.
+             </remarks>
+            
+             <response code="200">
+             Возвращает массив категорий или текст ошибки.
+             - categories - массив категорий
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.CreateMissedCall(TrueKeyServer.Models.Mobile.Outer.CreateMissedCall.Request)">
+             <summary>
+             Запрос для запроса звонка.
+             </summary>
+            
+             <remarks>
+             Создает запрос на обратный звонок в сд.
+             - ModileId - мобильный идентификатор пользователя
+             </remarks>
+            
+             <response code="200">
+             Сервер в ответ возвращает метку успешности изменения данных:
+             - success - успешность изменения данных
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="T:TrueKeyServer.Controllers.MonitoringControllersv1.MonitoringAuthDataControllers">
+            <summary>
+            Контроллер для работы с мониторингом.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MonitoringControllersv1.MonitoringAuthDataControllers.GetKey">
+             <summary>
+             Запрос на получения логиновэ\паролей.
+             </summary>
+            
+             <remarks>
+             Возвращает список стандартных пар лоигно\пароль для айко офиса.
+             </remarks>
+            
+             <response code="200">
+             Сервер возвращает массив пар логин\пароль.
+             - login - логин
+             - password - пароль
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MonitoringControllersv1.MonitoringAuthDataControllers.PostKey(TrueKeyServer.Models.Monitoring.OuterKey.Request)">
+             <summary>
+             Запрос для сохранения новой пары логин\пароль.
+             </summary>
+            
+             <remarks>
+             Записывает в БД новую пару логин\пароль длчя последующего использования мониторингами при авторизации в айко офисе.
+             - login - логин
+             - password - пароль
+             </remarks>
+            
+             <response code="200">
+             Сервер возвращает метку успешности записи.
+             - success - успешность сохранения пары логин\пароль
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MonitoringControllersv1.MonitoringFRDataController.SetFRData(TrueKeyServer.Models.Monitoring.SetFRData.Request)">
+             <summary>
+             Запрос для сохранения данных по ФРам.
+             </summary>
+            
+             <remarks>
+             Записывает в БД данные по ФРам.
+             - frDatas - массив данных по ФРам
+             - - Owner - 1С guid компании-владельца ФР
+             - - Inn - ИНН
+             - - AdressPlaceOfS - Адрес места установки ФР
+             - - NDS - НДС
+             - - Model - Модель ФР
+             - - FirmwareID - Версия прошивки
+             - - SerialNumber - Серийниый номер
+             - - RegisterNumber - Регистрационный номер
+             - - NomberFN - Заводской номер
+             - - VersConfigur - Версия конфигуратора
+             - - VersBoot - Версия загрузчика
+             - - VersionFn - Версия ФН
+             - - OperatorFD - Оператор фискальных данных
+             - - RegFnCount - Количество оставшихся регистраций
+             - - AmountFnRereg - Количество проведенных регистраций
+             - - CheckResource - Ресурс ФН
+             - - FFD - Версия ФФД
+             - - EndDataFN - Дата окончаня ФН
+             - - FnExpireDays - Количество дней до окончания ФН
+             - - QueueDocOFD - Количество документов не отправленных в ОФД
+             - - NumFirstUnDoc - Номер первого не отправленного документа
+             - - DateFirstUnDoc - Дата первого не отправленного документа
+             - - StateInfoEx - Статус обмена с ОФД
+             - - LastRegDateFN - Дата последней регистрации
+             </remarks>
+            
+             <response code="200">
+             Сервер возвращает метку успешности записи.
+             - success - успешность сохранения пары логин\пароль
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="M:TrueKeyServer.Controllers.MonitoringControllersv1.MonitoringFRDataController.GetFRData">
+             <summary>
+             Запрос для получения данных по ФРам.
+             </summary>
+            
+             <remarks>
+             Запрашивает массив данных по ФР.
+             </remarks>
+            
+             <response code="200">
+             Сервер возвращает массив данных по ФРам.
+             - frDatas - массив данных по ФРам
+             - - Owner - 1С guid компании-владельца ФР
+             - - Inn - ИНН
+             - - AdressPlaceOfS - Адрес места установки ФР
+             - - NDS - НДС
+             - - Model - Модель ФР
+             - - FirmwareID - Версия прошивки
+             - - SerialNumber - Серийниый номер
+             - - RegisterNumber - Регистрационный номер
+             - - NomberFN - Заводской номер
+             - - VersConfigur - Версия конфигуратора
+             - - VersBoot - Версия загрузчика
+             - - VersionFn - Версия ФН
+             - - OperatorFD - Оператор фискальных данных
+             - - RegFnCount - Количество оставшихся регистраций
+             - - AmountFnRereg - Количество проведенных регистраций
+             - - CheckResource - Ресурс ФН
+             - - FFD - Версия ФФД
+             - - EndDataFN - Дата окончаня ФН
+             - - FnExpireDays - Количество дней до окончания ФН
+             - - QueueDocOFD - Количество документов не отправленных в ОФД
+             - - NumFirstUnDoc - Номер первого не отправленного документа
+             - - DateFirstUnDoc - Дата первого не отправленного документа
+             - - StateInfoEx - Статус обмена с ОФД
+             - - LastRegDateFN - Дата последней регистрации
+             - errorMessage - строка с ошибкой, если таковая возникнет
+             </response>
+        </member>
+        <member name="T:TrueKeyServer.Support.Logger">
+            <summary>
+            Класс отвечающий за запись логов.
+            Методы:
+            Log - функция, записывающая лог,
+            LogArch - функция, которая архивирует все старые папки логов.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Support.Logger.#ctor(System.String,System.String,System.Int64)">
+            <summary>
+            Конструктор класса Logger с обязательными параметрами:
+            folder  - папка для хранения логов,
+            filename - название файла лога;
+            и необязательным:
+            maxlogsize  - максимальный объем файла лога, после которого он будет архивирован, по умолчанию 10 мбайт.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Support.Logger.Log(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Функция записывающая лог (
+            func  - название функции записывающей строку лога,
+            str - строка лога, указать "START" для инициализации стартового сообщения лога,
+            type - тип лога, по умолчанию "Info", для типа "ERROR" лог дублируется в отдельный файл,
+            сaret  - добавляет указанное количество переносов после записи основного значения.)
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Support.Logger.LogArch">
+            <summary>
+            Функция, которая архивирует все старые папки логов.
+            Возвращает описание ошибки при архивировании или "noner" если ошибок нет.
+            </summary>
+        </member>
+        <member name="M:TrueKeyServer.Support.Logger.ChekLogSize(System.String,System.String)">
+            <summary>
+            Сулжебная функция, архивирующая файл логов, в случае, если он превышает указанный размер.
+            </summary>
+        </member>
+    </members>
+</doc>

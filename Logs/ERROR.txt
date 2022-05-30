@@ -1,0 +1,443 @@
+27.08.2021 18:22:29 - [ERROR][7] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.KAMData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\KAMData.cs:line 17
+   at TrueKeyServer.Protocols.NaumenExchange.GetKAmData(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 381
+27.08.2021 18:27:24 - [ERROR][8] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.KAMData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\KAMData.cs:line 17
+   at TrueKeyServer.Protocols.NaumenExchange.GetKAmData(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 381
+27.08.2021 18:27:44 - [ERROR][14] NaumenExchange.ChangeLogin : Error: Error parsing undefined value. Path '', line 1, position 1.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseUndefined()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.KAMData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\KAMData.cs:line 17
+   at TrueKeyServer.Protocols.NaumenExchange.GetKAmData(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 381
+27.08.2021 18:29:17 - [ERROR][16] NaumenExchange.ChangeLogin : Error: Error parsing undefined value. Path '', line 1, position 1.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseUndefined()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.KAMData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\KAMData.cs:line 17
+   at TrueKeyServer.Protocols.NaumenExchange.GetKAmData(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 381
+21.09.2021 14:34:15 - [ERROR][7] MobileControllersV1.Auth : Error: Authorization to nauman failed.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.AuthMobile(Request authInfo) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 142
+21.09.2021 14:35:13 - [ERROR][7] MobileControllersV1.Auth : Error: Authorization to nauman failed.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.AuthMobile(Request authInfo) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 142
+21.09.2021 14:36:47 - [ERROR][7] MobileControllersV1.Auth : Error: Authorization to nauman failed.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.AuthMobile(Request authInfo) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 142
+21.09.2021 14:45:04 - [ERROR][8] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: E. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:45:15 - [ERROR][8] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:49:03 - [ERROR][8] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: E. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:49:05 - [ERROR][8] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:50:12 - [ERROR][15] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:50:12 - [ERROR][15] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:51:22 - [ERROR][19] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: E. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:51:22 - [ERROR][19] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:51:58 - [ERROR][8] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:51:59 - [ERROR][8] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:52:29 - [ERROR][18] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:52:30 - [ERROR][18] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+21.09.2021 14:53:21 - [ERROR][27] NaumenExchange.ChangeLogin : Error: Unexpected character encountered while parsing value: E. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.ContactsData.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\ContactsData.cs:line 14
+   at TrueKeyServer.Protocols.NaumenExchange.GetContacts(String uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 382
+21.09.2021 14:53:22 - [ERROR][27] MobileControllersV1.GetContacts : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileAuthControllers.GetContacts(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\AuthControllers.cs:line 415
+23.09.2021 15:07:41 - [ERROR][4] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:08:31 - [ERROR][7] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:09:31 - [ERROR][14] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:10:12 - [ERROR][17] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:10:44 - [ERROR][4] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:15:06 - [ERROR][4] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:16:40 - [ERROR][4] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:16:50 - [ERROR][8] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 525
+InnerException: 
+23.09.2021 15:36:53 - [ERROR][7] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 532
+InnerException: 
+23.09.2021 15:37:50 - [ERROR][15] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 532
+InnerException: 
+23.09.2021 15:38:09 - [ERROR][15] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 532
+InnerException: 
+23.09.2021 15:39:45 - [ERROR][7] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 532
+InnerException: 
+23.09.2021 15:43:59 - [ERROR][13] NaumenExchange.PostTask : Error: Unexpected character encountered while parsing value: j. Path '', line 0, position 0.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.Inner.CreateTaskResp.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\Inner\CreateTaskResp.cs:line 25
+   at TrueKeyServer.Protocols.NaumenExchange.TryAddTask(InnerTask& innerTask) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 35
+InnerException: 
+23.09.2021 16:10:02 - [ERROR][14] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 562
+InnerException: 
+23.09.2021 16:10:06 - [ERROR][14] MobileControllersV1.PostComment : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV1.MobileTaskCommentControllers.AddCommentMobile(Request outerComment) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV1\TaskCommentControllers.cs:line 120
+23.09.2021 16:10:10 - [ERROR][7] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 562
+InnerException: 
+24.09.2021 19:19:58 - [ERROR][6] QartzScheduler.ClearDB : 42701: столбец "taskNumber" отношения "Messages" уже существует   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at TrueKeyServer.DB.DBContext..ctor(DbContextOptions`1 options) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBContext.cs:line 23
+   at TrueKeyServer.Support.Job.ClearDB() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Support\QartzScheduler.cs:line 38
+01.10.2021 11:41:06 - [ERROR][6] QartzScheduler.ClearDB : The LINQ expression 'DbSet<Message>()
+    .Where(m => Convert.ToInt64(m.timeChange) < DateTimeOffset.Now.AddMonths(-2).ToUnixTimeSeconds())' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0& )
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TrueKeyServer.Support.FixDB.ClearOldMessages(DBContext AC) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Support\FixDB.cs:line 49
+   at TrueKeyServer.Support.Job.ClearDB() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Support\QartzScheduler.cs:line 40
+13.10.2021 17:00:07 - [ERROR][6] DBWorker.UserGet : Error: The user with the following Uuid was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(Int32 Uuid) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 600
+InnerException: 
+06.12.2021 18:18:44 - [ERROR][6] DBWorker.UserGet : Error: The user with the following username\password was not found.
+StackTrace:    at TrueKeyServer.DB.DBWorker.UserGet(String mobileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\DB\DBWorker.cs:line 563
+InnerException: 
+08.12.2021 16:27:49 - [ERROR][7] ELMAExchange.RequestToELMA : Request return status code is NotFound
+08.12.2021 16:27:49 - [ERROR][7] ELMAExchange.GetUser : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryGetUser(InnerUser& user, Boolean firstAuth) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 216
+InnerException: 
+08.12.2021 16:27:50 - [ERROR][7] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 164
+08.12.2021 16:29:43 - [ERROR][7] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+08.12.2021 16:29:44 - [ERROR][7] ELMAExchange.GetUser : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryGetUser(InnerUser& user, Boolean firstAuth) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 216
+InnerException: 
+08.12.2021 16:29:44 - [ERROR][7] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 164
+10.12.2021 11:50:36 - [ERROR][6] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user)
+10.12.2021 11:50:56 - [ERROR][6] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user)
+10.12.2021 11:51:03 - [ERROR][6] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user)
+10.12.2021 11:51:22 - [ERROR][11] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user)
+10.12.2021 12:21:24 - [ERROR][6] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+10.12.2021 12:21:25 - [ERROR][6] ELMAExchange.TryAddComment : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAddComment(InnerComment& innerComment) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 89
+InnerException: 
+24.12.2021 12:19:49 - [ERROR][5] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+24.12.2021 12:20:12 - [ERROR][5] ELMAExchange.AddUpdateUser : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAddUpdateUser(InnerUser& user, Boolean update) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 257
+InnerException: 
+24.12.2021 12:20:17 - [ERROR][5] ELMAExchange.TryRegisterUser : Error: Error in registration to ELMA. See previus step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryRegisterUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 145
+24.12.2021 12:20:22 - [ERROR][5] MobileControllersV1.Register : Error: Registration to ELMA failed.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.RegisterMobile(Request infoRegister) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV2\AuthControllers.cs:line 89
+24.12.2021 13:05:48 - [ERROR][17] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+24.12.2021 13:05:49 - [ERROR][17] ELMAExchange.AddUpdateUser : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAddUpdateUser(InnerUser& user, Boolean update)
+InnerException: 
+24.12.2021 13:05:49 - [ERROR][17] ELMAExchange.TryRegisterUser : Error: Error in registration to ELMA. See previus step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryRegisterUser(InnerUser& user)
+24.12.2021 13:05:49 - [ERROR][17] MobileControllersV1.Register : Error: Registration to ELMA failed.
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.RegisterMobile(Request infoRegister)
+24.12.2021 16:43:22 - [ERROR][24] MobileControllersV2.ChangeData : Error: Input string was not in a correct format.
+StackTrace:    at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at TrueKeyServer.Controllers.MobileControllersV2.AuthControllers.ChangeUserData(Request request) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV2\AuthControllers.cs:line 265
+24.12.2021 17:04:39 - [ERROR][5] ELMAExchange.GetCategories : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.GetCategories() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 120
+24.12.2021 17:15:04 - [ERROR][16] NaumenExchange.GetOrg : Error: Invalid URI: The format of the URI could not be determined.
+StackTrace:    at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at TrueKeyServer.Protocols.NaumenExchange.GetUuidByOrgId(String OrgId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 86
+24.12.2021 17:15:15 - [ERROR][16] NaumenExchange.GetUser : Error: Object reference not set to an instance of an object.
+StackTrace:    at TrueKeyServer.Controllers.HelperControllersV1.HelperControllers.GetUUIDByOrgId(Request orgInfo) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\HelperControllersV1\HelperControllers.cs:line 41
+24.12.2021 17:21:08 - [ERROR][17] ELMAExchange.GetContacts : Error: Unexpected character encountered while parsing value: [. Path 'result.result[0].manager', line 1, position 258.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.ELMA.GetContacts.Response.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\ELMA\GetContacts.cs:line 52
+   at TrueKeyServer.Protocols.ELMAExchange.GetContacts(String userId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 339
+InnerException: 
+24.12.2021 17:21:31 - [ERROR][23] ELMAExchange.GetContacts : Error: Unexpected character encountered while parsing value: [. Path 'result.result[0].manager', line 1, position 258.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.ELMA.GetContacts.Response.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\ELMA\GetContacts.cs:line 52
+   at TrueKeyServer.Protocols.ELMAExchange.GetContacts(String userId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 339
+InnerException: 
+24.12.2021 17:22:42 - [ERROR][25] ELMAExchange.GetContacts : Error: Unexpected character encountered while parsing value: [. Path 'result.result[0].manager', line 1, position 258.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.ELMA.GetContacts.Response.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\ELMA\GetContacts.cs:line 52
+   at TrueKeyServer.Protocols.ELMAExchange.GetContacts(String userId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 339
+InnerException: 
+24.12.2021 18:10:47 - [ERROR][29] ELMAExchange.GetContacts : Error: Unexpected character encountered while parsing value: [. Path 'result.result[0].manager', line 1, position 258.
+StackTrace:    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at TrueKeyServer.Models.Mobile.ELMA.GetContacts.Response.FromJson(String json) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Models\Mobile\ELMA\GetContacts.cs:line 52
+   at TrueKeyServer.Protocols.ELMAExchange.GetContacts(String userId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 339
+InnerException: 
+24.12.2021 18:10:47 - [ERROR][30] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 165
+24.12.2021 18:10:53 - [ERROR][29] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 165
+28.12.2021 16:08:53 - [ERROR][6] NaumenExchange.PostFile : Error: Invalid URI: The format of the URI could not be determined.
+StackTrace:    at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at TrueKeyServer.Protocols.NaumenExchange.TryAddFiles(String uuid, IFormFileCollection files, Boolean comment) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 29
+28.12.2021 16:09:42 - [ERROR][7] NaumenExchange.PostFile : Error: Invalid URI: The format of the URI could not be determined.
+StackTrace:    at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at TrueKeyServer.Protocols.NaumenExchange.TryAddFiles(String uuid, IFormFileCollection files, Boolean comment) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\NaumenExchange.cs:line 29
+29.12.2021 17:12:36 - [ERROR][5] ELMAExchange.TryAddFiles : Error from upload file to ELMA: BadRequest
+29.12.2021 17:29:12 - [ERROR][6] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+29.12.2021 17:29:13 - [ERROR][6] NaumenExchange.PostFile : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.AddFiles(String uuid, IFormFileCollection files, Boolean comment)
+29.12.2021 17:36:16 - [ERROR][27] ELMAExchange.RequestToELMA : Request return status code is BadRequest
+29.12.2021 17:36:16 - [ERROR][27] NaumenExchange.PostFile : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.AddFiles(String uuid, IFormFileCollection files, Boolean comment)
+29.12.2021 17:36:20 - [ERROR][30] MobileControllersV1.PostFiles : Error: No entityes with this uuid: 01d6bffa-cba0-4e4e-96e3-1c0533d61903
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles()
+29.12.2021 17:36:33 - [ERROR][30] MobileControllersV1.PostFiles : Error: No entityes with this uuid: 01d6bffa-cba0-4e4e-96e3-1c0533d61903
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles()
+30.12.2021 14:22:35 - [ERROR][5] ELMAExchange.TryAuthUser : Error: Authorization to ELMA failed.
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.TryAuthUser(InnerUser& user) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 264
+30.12.2021 14:57:31 - [ERROR][49] MobileControllersV1.PostFiles : Error: No entityes with this uuid: ba8450b5-0ec6-44fd-83e7-8a4f1e35b82e
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV2\TaskCommentControllers.cs:line 195
+30.12.2021 14:58:43 - [ERROR][76] MobileControllersV1.PostFiles : Error: No entityes with this uuid: ba8450b5-0ec6-44fd-83e7-8a4f1e35b82e
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV2\TaskCommentControllers.cs:line 195
+30.12.2021 14:59:24 - [ERROR][76] MobileControllersV1.PostFiles : Error: No entityes with this uuid: ba8450b5-0ec6-44fd-83e7-8a4f1e35b82e
+StackTrace:    at TrueKeyServer.Controllers.MobileControllersV2.MobileTaskCommentControllers.AttachFiles() in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Controllers\MobileControllersV2\TaskCommentControllers.cs:line 195
+15.01.2022 19:41:54 - [ERROR][4] ELMAExchange.RequestToELMA : Request return status code is InternalServerError
+15.01.2022 19:41:55 - [ERROR][4] ELMAExchange.GetFileLink : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.GetFileLink(String fileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 220
+InnerException: 
+15.01.2022 19:41:57 - [ERROR][4] ELMAExchange.RequestToELMA : Request return status code is InternalServerError
+15.01.2022 19:41:57 - [ERROR][4] ELMAExchange.GetFileLink : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.GetFileLink(String fileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 220
+InnerException: 
+15.01.2022 19:42:52 - [ERROR][11] ELMAExchange.RequestToELMA : Request return status code is InternalServerError
+15.01.2022 19:42:52 - [ERROR][11] ELMAExchange.GetFileLink : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.GetFileLink(String fileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 220
+InnerException: 
+15.01.2022 19:42:54 - [ERROR][11] ELMAExchange.RequestToELMA : Request return status code is InternalServerError
+15.01.2022 19:42:54 - [ERROR][11] ELMAExchange.GetFileLink : Error: Error on ELMA request. Look previos step
+StackTrace:    at TrueKeyServer.Protocols.ELMAExchange.GetFileLink(String fileId) in E:\DOCUMENTS\DEVELOPMENT\MyProg\TrueKeyServer\TrueKeyServer\Protocols\ELMAExchange.cs:line 220
+InnerException: 
